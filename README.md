@@ -57,6 +57,7 @@ The application handles various errors such as:
 - **401 Unauthorized**: Authentication errors.
 - **404 Not Found**: Resource not found.
 
+
 ##License
 - This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
