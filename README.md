@@ -2,7 +2,7 @@
 
 Welcome to the **Pastbin Service**! This FastAPI-based web application allows users to securely register, log in, and post messages. With robust email verification and JWT-based authentication, this project offers a streamlined and secure experience for users.
 
-![Pastbin Service Architecture](img/pastbine_service.png)
+![Pastbin Service Architecture](img/pastbin_service.png)
 
 ## Features
 
