@@ -30,12 +30,12 @@ Welcome to the **Pastbin Service**! This FastAPI-based web application allows us
 ## API Endpoints
 
 **Authentication**
-GET /auth/register: Displays the registration page.
-POST /auth/register: Handles user registration and sends a confirmation email.
-GET /auth/login: Displays the login page.
-POST /auth/login: Authenticates users and sets a JWT cookie.
-GET /auth/logout: Logs out the user by clearing the JWT cookie.
-GET /auth/users/me: Retrieves the current user's profile information.
+GET /auth/register: Displays the registration page.\n
+POST /auth/register: Handles user registration and sends a confirmation email.\n
+GET /auth/login: Displays the login page.\n
+POST /auth/login: Authenticates users and sets a JWT cookie.\n
+GET /auth/logout: Logs out the user by clearing the JWT cookie.\n
+GET /auth/users/me: Retrieves the current user's profile information.\n
 
 **Message Handling**
 GET /pastbin/create_message: Displays the create message page.
