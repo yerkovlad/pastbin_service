@@ -11,17 +11,6 @@ Welcome to the **Pastbin Service**! This FastAPI-based web application allows us
 - **Email Verification**: Automated confirmation emails sent upon registration.
 - **JWT Authentication**: Token-based authentication for secure user access.
 
-## Table of Contents
-
-- [Features](#features)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Error Handling](#error-handling)
-- [License](#license)
-- [Contact](#contact)
-
 ## Installation
 
 To get started with the Pastbin Service, follow these steps:
@@ -31,3 +20,12 @@ To get started with the Pastbin Service, follow these steps:
    ```bash
    git clone https://github.com/yourusername/pastbin-service.git
    cd pastbin-service
+   ```
+
+## Usage
+
+2. **Usage**
+To run the application, start the FastAPI server:
+   ```bash
+   uvicorn main:app --reload
+   ```
