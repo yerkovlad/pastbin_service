@@ -26,3 +26,29 @@ Welcome to the **Pastbin Service**! This FastAPI-based web application allows us
    ```bash
    uvicorn main:app --reload
    ```
+
+## API Endpoints
+
+**Authentication**
+GET /auth/register: Displays the registration page.
+POST /auth/register: Handles user registration and sends a confirmation email.
+GET /auth/login: Displays the login page.
+POST /auth/login: Authenticates users and sets a JWT cookie.
+GET /auth/logout: Logs out the user by clearing the JWT cookie.
+GET /auth/users/me: Retrieves the current user's profile information.
+
+**Message Handling**
+GET /pastbin/create_message: Displays the create message page.
+POST /pastbin/create_message: Submits a new message.
+GET /pastbin/message/{message_id}: Retrieves a message by its ID.
+GET /pastbin/all_messages: Retrieves all messages.
+
+**Email Verification*
+GET /auth/confirm/{token}: Confirms the email address using a verification token.
+
+**Error Handling**
+The application handles various errors such as:
+
+400 Bad Request: Invalid input or registration errors.
+401 Unauthorized: Authentication errors.
+404 Not Found: Resource not found.
