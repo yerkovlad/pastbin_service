@@ -13,19 +13,16 @@ Welcome to the **Pastbin Service**! This FastAPI-based web application allows us
 
 ## Installation
 
-To get started with the Pastbin Service, follow these steps:
-
-1. **Clone the repository:**
+**Clone the repository:**
 
    ```bash
    git clone https://github.com/yourusername/pastbin-service.git
-   cd pastbin-service
+   cd pastbin_service
    ```
 
 ## Usage
 
-2. **Usage**
-To run the application, start the FastAPI server:
+**To run the application, start the FastAPI server:**
    ```bash
    uvicorn main:app --reload
    ```
