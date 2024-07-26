@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastbin</title>
+    <link rel="stylesheet" href="/static/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pastbin</h1>
+        <p>Use the buttons below to navigate to different sections.</p>
+        <div class="buttons">
+            <a href="/pastbin/create_message" class="button">Create Message</a>
+            <a href="/pastbin/all_messages" class="button">See Messages</a>
+            <a href="/auth/register" class="button">Registration</a>
+            <a href="/auth/login" class="button">Login</a>
+            <a href="/auth/logout" id="logout" class="button">Logout</a>
+        </div>
+        <div id="user-info" class="{{ 'hidden' if not username else '' }}">
+            <p id="username">{{ 'Username: ' + username if username else '' }}</p>
+            <p id="email">{{ 'Email: ' + email if email else '' }}</p>
+        </div>
+        <div id="message-input" class="hidden">
+            <input type="text" id="input-field" placeholder="Enter message ID...">
+            <button onclick="redirectToMessage()">Submit</button>
+        </div>
+    </div>
+</body>
+</html>

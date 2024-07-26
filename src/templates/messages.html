@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Messages</title>
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>All Messages</h1>
+        <ul class="message-list">
+            {% for message in messages %}
+                <li>
+                    <strong>Username:</strong> {{ message.username }}<br>
+                    <strong>Text:</strong> {{ message.text }}<br>
+                    <strong>ID:</strong> {{ message.id }}
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="/" class="back-button">Back</a>
+    </div>
+</body>
+</html>
