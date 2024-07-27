@@ -90,7 +90,7 @@ async def confirm_email(token: str):
         raise HTTPException(status_code=400, detail="Invalid token")
 
     await update_one_user_token({"confirmation_token": token}, {"$set": {"is_active": True, "confirmation_token": None}})
-    return {"message": "Email confirmed successfully. You can now log in."}
+    return RedirectResponse(url="/", status_code=302)
 
 @router.get("/login")
 async def login_page(request: Request):
@@ -108,6 +108,7 @@ async def login_page(request: Request):
 @router.post("/login")
 async def login(
     response: Response,
+    request: Request,
     username: str = Form(...),
     password: str = Form(...),
 ):
@@ -127,10 +128,16 @@ async def login(
     """
     db_user = await find_one_user({"username": username})
     if not db_user:
-        raise HTTPException(status_code=401, detail="Invalid username or password")
+        return config.TEMPLATES.TemplateResponse(
+        "invalid_username_password.html",
+        {"request": request}
+        )
 
     if not bcrypt.checkpw(password.encode('utf-8'), db_user["hashed_password"].encode('utf-8')):
-        raise HTTPException(status_code=401, detail="Invalid username or password")
+        return config.TEMPLATES.TemplateResponse(
+        "invalid_username_password.html",
+        {"request": request}
+        )
 
     if not db_user["is_active"]:
         raise HTTPException(status_code=400, detail="Email not confirmed")

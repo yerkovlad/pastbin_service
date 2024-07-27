@@ -68,7 +68,10 @@ async def message(message_id: str, request: Request):
             "message.html",
             {"request": request, "username": output["username"], "text": output["text"]}
         )
-    raise HTTPException(status_code=404, detail="Message not found")
+    return config.TEMPLATES.TemplateResponse(
+            "message_not_found.html",
+            {"request": request}
+        )
 
 @router.get("/all_messages")
 async def all_messages(request: Request):
