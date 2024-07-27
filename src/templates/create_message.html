@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Create message</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Message</title>
     <link rel="stylesheet" href="/static/styles/style.css">
 </head>
 <body>
-    <h2>Create Message</h2>
-    <form action="/pastbin/create_message" method="post">
-        <input type="text" name="text" placeholder="text" required />
-        <button type="create">Create</button>
-    </form>
-    <a href="/">Back</a>
+    <div class="container">
+        <h2>Create Message</h2>
+        <form action="/pastbin/create_message" method="post">
+            <input type="text" name="text" placeholder="Enter your message here" required />
+            <button type="submit" class="button">Create</button>
+        </form>
+        <a href="/" class="back-button">Back</a>
+    </div>
 </body>
 </html>
