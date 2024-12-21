@@ -63,6 +63,6 @@ The application handles various errors such as:
 
 ## Contact me:
 <p align="left">
-<a href="https://t.me/yevlad" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="yevlad" height="30" width="40" /></a>
+<a href="https://t.me/yevlad_lolz" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="yevlad" height="30" width="40" /></a>
   <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfmrfWTDsVMGSfnJnRflxbjFsntNGdjCscFqqTwXNlCJbztnJwqlPNNHTGXhQrTgGQGtDB" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="yerkovlad" height="30" width="40" /></a>
 </p>
